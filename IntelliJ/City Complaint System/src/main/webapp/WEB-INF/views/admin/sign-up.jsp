@@ -10,21 +10,21 @@
 <a href="../user/sign-in">Sign in</a>
 <h1>Admin - Sign up</h1>
 <form:form method="post" action="sign-up" modelAttribute="admin">
-    <table >
+    <table>
         <tr>
-            <td>First name: </td>
+            <td>First name:</td>
             <td><form:input path="firstName" type="text" required="required"/></td>
         </tr>
         <tr>
-            <td>Last name: </td>
+            <td>Last name:</td>
             <td><form:input path="lastName" type="text" required="required"/></td>
         </tr>
         <tr>
-            <td>Phone: </td>
+            <td>Phone:</td>
             <td><form:input path="phone" type="tel" required="required"/></td>
         </tr>
         <tr>
-            <td>Address: </td>
+            <td>Address:</td>
             <td><form:input path="address" type="text" required="required"/></td>
         </tr>
         <tr>

@@ -17,6 +17,7 @@ public class ComplaintDaoImpl implements ComplaintDao {
     public ComplaintDaoImpl(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;
     }
+
     @Override
     @Transactional
     public void create(Complaint complaint) {

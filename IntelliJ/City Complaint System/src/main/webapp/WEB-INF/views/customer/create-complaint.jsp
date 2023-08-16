@@ -17,7 +17,7 @@
             <td><form:input path="title" type="text" required="required"/></td>
         </tr>
         <tr>
-            <td>Description: </td>
+            <td>Description:</td>
             <td><form:input path="description" type="text" required="required"/></td>
         </tr>
         <tr>

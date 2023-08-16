@@ -12,11 +12,11 @@
 <form:form method="post" action="sign-in" modelAttribute="user">
     <table>
         <tr>
-            <td>Email: </td>
+            <td>Email:</td>
             <td><form:input path="email" type="text" required="required"/></td>
         </tr>
         <tr>
-            <td>Password: </td>
+            <td>Password:</td>
             <td><form:input path="password" type="password" required="required"/></td>
         </tr>
         <tr>

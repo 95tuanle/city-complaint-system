@@ -8,11 +8,16 @@ import java.util.List;
 
 public interface ComplaintDao {
     void create(Complaint complaint);
+
     Complaint read(long id);
+
     void update(Complaint complaint);
+
     void delete(Long id);
 
     List<Complaint> list();
+
     List<Complaint> listByCustomer(Customer customer);
+
     List<Complaint> listByEmployee(Employee employee);
 }

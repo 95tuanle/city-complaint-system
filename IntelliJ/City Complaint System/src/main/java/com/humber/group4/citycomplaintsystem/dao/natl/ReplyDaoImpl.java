@@ -16,6 +16,7 @@ public class ReplyDaoImpl implements ReplyDao {
     public ReplyDaoImpl(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;
     }
+
     @Override
     @Transactional
     public void create(Reply reply) {

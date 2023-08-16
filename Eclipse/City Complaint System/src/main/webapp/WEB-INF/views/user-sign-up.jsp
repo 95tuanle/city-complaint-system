@@ -10,17 +10,17 @@
 <a href="../user/sign-in">Sign in</a>
 <h1>Sign Up</h1>
 <form:form method="post" action="sign-up" modelAttribute="user">
-    <table >
+    <table>
         <tr>
-            <td>Email: </td>
+            <td>Email:</td>
             <td><form:input path="email" type="email" required="required"/></td>
         </tr>
         <tr>
-            <td>Password: </td>
+            <td>Password:</td>
             <td><form:input path="password" type="password" required="required"/></td>
         </tr>
         <tr>
-            <td>Type: </td>
+            <td>Type:</td>
             <td>
                 <form:select path="type" required="required">
                     <form:option value="customer">Customer</form:option>

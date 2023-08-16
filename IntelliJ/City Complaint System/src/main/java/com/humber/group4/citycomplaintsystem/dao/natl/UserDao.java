@@ -6,6 +6,8 @@ import java.util.List;
 
 public interface UserDao {
     void create(User user);
+
     User readByEmail(String email);
+
     List<User> listByType(String type);
 }

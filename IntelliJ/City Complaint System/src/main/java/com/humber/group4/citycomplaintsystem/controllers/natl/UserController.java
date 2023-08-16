@@ -17,7 +17,16 @@ public class UserController {
         this.userDao = userDao;
     }
 
-    @GetMapping(value="user/sign-up")
+    public static void setCookies(HttpServletResponse response, User user) {
+        Cookie email = new Cookie("email", user.getEmail());
+        email.setPath("/");
+        response.addCookie(email);
+        Cookie type = new Cookie("type", user.getType().name());
+        type.setPath("/");
+        response.addCookie(type);
+    }
+
+    @GetMapping(value = "user/sign-up")
     public String signUp(Model model) {
         model.addAttribute("user", new User());
         return "user-sign-up";
@@ -64,15 +73,6 @@ public class UserController {
             return "redirect:/user/sign-up";
         }
         return null;
-    }
-
-    public static void setCookies(HttpServletResponse response, User user) {
-        Cookie email = new Cookie("email", user.getEmail());
-        email.setPath("/");
-        response.addCookie(email);
-        Cookie type = new Cookie("type", user.getType().name());
-        type.setPath("/");
-        response.addCookie(type);
     }
 
     @GetMapping("user/sign-out")

@@ -56,7 +56,7 @@
 <form:form method="post" action="${complaint.id}/reply" modelAttribute="reply">
     <table>
         <tr>
-            <td>Description: </td>
+            <td>Description:</td>
             <td><form:input path="description" type="text" required="required"/></td>
         </tr>
         <tr>
